@@ -1,4 +1,4 @@
-{% set version = '0.4-4' %}
+{% set version = "0.5-0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DPQ_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DPQ/DPQ_{{ version }}.tar.gz
-  sha256: 5aebad12439522b8ab789f34158f38f541e56f2656d26814997b3d7e5e1a01f4
+  sha256: 61f6679de583740c5386ca31a3d66aca6b20bb91ccefb61fc0f5b50edd4dfa42
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
 
   rpaths:
@@ -50,16 +50,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=DPQ
   license: GPL-2.0-or-later
-  summary: 'Computations for approximations and alternatives for the ''DPQ'' (Density (pdf),
-    Probability (cdf) and Quantile) functions for probability distributions in R. Primary
-    focus is on (central and non-central) beta, gamma and related distributions such
-    as the chi-squared, F, and t. -- This is for the use of researchers in these numerical
-    approximation implementations, notably for my own use in order to improve standard
-    R pbeta(), qgamma(), ..., etc: {''"dpq"''-functions}.'
+  summary: "Computations for approximations and alternatives for the 'DPQ' (Density (pdf), Probability (cdf) and Quantile) functions for probability distributions in R. Primary focus is on (central and non-central) beta, gamma and related distributions such as the chi-squared, F, and t. -- This is for the use of researchers\
+    \ in these numerical approximation implementations, notably for my own use in order to improve standard R pbeta(), qgamma(), ..., etc: {'\"dpq\"'-functions}."
 
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
