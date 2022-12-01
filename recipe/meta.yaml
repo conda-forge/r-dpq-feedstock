@@ -1,4 +1,4 @@
-{% set version = "0.5-2" %}
+{% set version = "0.5-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DPQ_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DPQ/DPQ_{{ version }}.tar.gz
-  sha256: fb95474c53f55367b04b27b3bafa44b3f68c13a98e87a02614031d284dccf9f4
+  sha256: 8567c5171d318d8e2289d2fa810b93dcbb91ed11c8be4fa2d77d5d1c995f1bca
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
 
   rpaths:
     - lib/R/lib/
