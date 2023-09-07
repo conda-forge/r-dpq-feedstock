@@ -3,6 +3,7 @@ About r-dpq-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dpq-feedstock/blob/main/LICENSE.txt)
 
+
 About r-dpq
 -----------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=DPQ
 Package license: GPL-2.0-or-later
 
 Summary: Computations for approximations and alternatives for the 'DPQ' (Density (pdf), Probability (cdf) and Quantile) functions for probability distributions in R. Primary focus is on (central and non-central) beta, gamma and related distributions such as the chi-squared, F, and t. -- This is for the use of researchers in these numerical approximation implementations, notably for my own use in order to improve standard R pbeta(), qgamma(), ..., etc: {'"dpq"'-functions}.
+
 About r-dpq
 -----------
 
