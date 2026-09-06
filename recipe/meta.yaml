@@ -1,4 +1,4 @@
-{% set version = "0.6-1" %}
+{% set version = "0.6-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/DPQ_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/DPQ/DPQ_{{ version }}.tar.gz
-  sha256: db54be9f1b50927cf786788979300ce4dbed52af10b5a96a7e84259089bfe88c
+  sha256: f962e6dae8da738a85257c8912ec32a622a54cf5dfd949861f293945fd19ca3c
 
 build:
   number: 0
